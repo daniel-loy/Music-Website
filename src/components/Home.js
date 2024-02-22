@@ -14,7 +14,7 @@ function Home(){
     setIsLoading(true);
     try {
       const response = await fetch(
-        `https://api.spotify.com/v1/search?q=${keyword === "" ? "rending" : keyword}&type=track`,
+        `https://api.spotify.com/v1/search?q=${keyword === "" ? "trending" : keyword}&type=track`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
